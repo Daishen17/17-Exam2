@@ -3,7 +3,7 @@ Exam 2, problem 2.
 
 Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
          Mark Hays, Amanda Stouder, Aaron Wilkin, their colleagues,
-         and Yifan Dai.
+         and Yifan Dai. Hi
 """  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 import math
