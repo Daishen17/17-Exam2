@@ -191,11 +191,11 @@ class Triangle(object):
         #        The tests are already written (below).
         #        They include the Example in the above doc-string.
         # ---------------------------------------------------------------------
-        self.d1 = self.a.distance_from(self.b)
-        self.d2 = self.a.distance_from(self.c)
-        self.d3 = self.b.distance_from(self.c)
-        s = (self.d1 + self.d2 + self.d3) / 2
-        area = (s * (s - self.d1) * (s - self.d2) * (s - self.d3)) ** (1 / 2)
+        self.D1 = self.a.distance_from(self.b)
+        self.D2 = self.a.distance_from(self.c)
+        self.D3 = self.b.distance_from(self.c)
+        S = (self.D1 + self.D2 + self.D3) / 2
+        area = (S * (S - self.D1) * (S - self.D2) * (S - self.D3)) ** (1 / 2)
         k = round(area, 1)
         if k > self.Area:
             self.Area = k
@@ -249,10 +249,10 @@ class Triangle(object):
         #        They include the Example in the above doc-string.
         # ---------------------------------------------------------------------
         self.a.x = self.a.x * f
-        self.b.x = self.b.x * f
-        self.c.x = self.c.x * f
         self.a.y = self.a.y * f
+        self.b.x = self.b.x * f
         self.b.y = self.b.y * f
+        self.c.x = self.c.x * f
         self.c.y = self.c.y * f
 
     def return_doubled_triangle(self):
